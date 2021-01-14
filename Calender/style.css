@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(black,silver,gold);
+    opacity: 1;
+    /*background: url(./Smoke.mp4) no-repeat;
+    background-size: cover;*/
+}
+.calender{
+    position: relative;
+    width: 200px;
+    text-align: center;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    --webkit-box-reflect : below 1px linear-gradient(transparent,transparent,black);
+}
+.calender #month_name{
+    position: relative;
+    background: orange;
+    padding: 10px 10px;
+    font-weight: 800;
+    color:#fff;
+    line-height: 1.5;
+    font-size: 30px;
+}
+.calender #day_name{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #999;
+}
+.calender #day_num{
+    font-size: 80px;
+    margin-top: 0px;
+    font-weight: 700;
+    line-height: 1em;
+    color: #333333;
+}
+.calender #year{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #999999;
+}

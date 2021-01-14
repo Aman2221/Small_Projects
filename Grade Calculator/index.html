@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Grade Calculater</title>
+</head>
+<body>
+    <div class="nav"><h2>Grade Calculator</h2></div>
+    <div class="container">
+        <div class="card">
+            <div class="line"></div>
+            <h2 class="head">
+                Student<br>Grade<br>Calculater
+            </h2>
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="Physics" id="ph">
+            <input type="text" placeholder="Biology" id="bi">
+            <input type="text" placeholder="Maths"   id="ma">
+            <input type="text" placeholder="chemistry" id="ch">
+            <input type="text" placeholder="English" id="en"><br>
+            <input type="submit" value="Caluculate" id="cal" onclick="calcu()">
+        </div>
+    </div>
+    <div class="calculation">
+        <h2 id="result"></h2>
+    </div>
+    <script src="./mian.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+:root{
+    --font-color : aqua;
+    --backgroun-color : #111;
+    --text-color : lime;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    background: #000;
+    background-size: cover;
+
+}
+.nav{
+    box-sizing: border-box;
+    width: 98%;
+    position: relative;
+    left: 7px;
+    top: 4px;
+    right: 0px;
+}
+.nav h2{
+    color: aqua;
+    text-align: center;
+    background : linear-gradient(#000,rgb(54, 52, 52),rgb(175, 170, 170));
+    font-weight: 800;
+    border-radius: 8px;
+}
+.container{
+    background: linear-gradient(rgb(48, 38, 38));
+    min-height: 300px;
+    width: 50%;
+    position: relative;
+    top: 0px;
+    left: 200px;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    box-sizing: border-box;
+}
+.line{
+    background: cyan;
+    width: 5px;
+    height: 100px;
+    position: relative;
+    left: 16px;
+    top: 65px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(255,0,0,0.8);
+}
+.card h2{
+    color: var(--font-color);
+    position: relative;
+    top: -40px;
+    left: 30px;
+    font-weight: 700;
+    text-shadow: 2px 2px 3px rgba(255,0,0,0.8);
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.calculation{
+    width: 50%;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 20px;
+    top: 10px;
+    left: 200px;
+}
+.calculation h2{
+    font-size: 17px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    letter-spacing: 2px;
+    line-height: 34px;
+}
+.inputs{
+    position: relative;
+    box-sizing: border-box;
+}
+.inputs input{
+    position: relative;
+    border: none;
+    top: 20px;
+    left: 20px;
+    margin-top: 15px;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    padding: 5px;
+    font-weight: 200;
+    color: #fff;
+}
+.inputs input[type="submit"]{
+    transition: 1s;
+    background:#111;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    border: none;
+    color: aqua;
+}
+.calculation h2{
+    color: #fff;
+}
+@media screen and (max-width : 468px){
+    .nav{
+        box-sizing: border-box;
+        width: 100%;
+        position: relative;
+        left: 0px;
+        top: 4px;
+        right: 0px;
+    }
+    .nav h2{
+        display: block;
+        color: cyan;
+        letter-spacing: 1px;
+        text-align: center;
+        background : linear-gradient(#000,rgb(54, 52, 52),rgb(175, 170, 170));
+        font-weight: 500;
+        border: none;
+    }
+    .container{
+        width: 100%;
+        position: relative;
+        top: 10px;
+        left: 10px;
+    }
+    .line{
+        width: 3px;
+        height: 80px;
+        position: relative;
+        left: 16px;
+        top: 60px;
+    }
+    .card h2{
+        position: relative;
+        top: -30px;
+        left: 30px;
+        font-weight: 500;
+        font-size: 22px;
+    }
+    .inputs input{
+        position: relative;
+        border: none;
+        top: 20px;
+        left: 20px;
+        margin-top: 12px;
+        border: none;
+        background: none;
+        text-transform: uppercase;
+        padding: 5px;
+        font-weight: 100;
+        color: #fff;
+    }
+    .inputs input[type="submit"]{
+        margin-top: 20px;
+    }
+    .calculation{
+        left: 10px;
+    }
+}

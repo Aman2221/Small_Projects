@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1,0">
+        <link rel="icon" href="E:\Project\IMG\favicon.png">
+        <link rel="stylesheet" href="E:\Project\Css\Login.css">
+        <title> Log in </title>
+        <script src="E:\Project\Login.js"></script>
+        <script type="text/javascript">
+            function fun()
+            {
+              var u = document.getElementById("un");
+              var p = document.getElementById("ps");
+
+              if(u.value=="" || p.value=="")
+              {
+                alert("Empty username or password!!");
+              }
+              else if(u.value=="Aman" && p.value=="1234")
+              {
+                alert("Welcome,Press Continue");
+              }
+              else
+              {
+                alert("Wrong username or password,Try again!!");
+              }
+            } 
+        </script>
+            <body>
+                <div class="login-box">
+                    <h1 style="color : black;">Login</h1>
+                    <div class = "textbox">
+                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                        <input id="un" type="text" placeholder="Username" name="" value=""> 
+                    </div>
+                    <div class = "textbox">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <input id="ps" type="password" placeholder="Password" name="" value=""> 
+                    </div>
+                    <div>
+                        <input class="btn1" onclick="fun()" type="button" name="" value="Sign in">
+                    </div>
+                    <div>
+                    <a href="E:\Project\HTML\SignUp.html" >
+                      <input class="btn2" type="button" name="" value="New User">
+                    </a>
+                    </div>
+                    <div>
+                      <a href="E:\Project\HTML\ForgotPass.html">
+                        <input class="btn3" type="button" name="" value="Forgot Password">
+                      </a>
+                    </div>
+                </div>
+              </div>
+            </body>
+    </head>
+</html>

@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background: #000;
+}
+body{
+    background-color: #efefef;
+}
+.container{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card{
+    position: relative;
+    width: 400px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 30px 1px rgba(255, 0, 0, 0.5);
+    overflow: hidden;
+}
+.header{
+    position: relative;
+    height: 265px;
+    
+}
+.mail{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 1.4rem;
+    color: #fff;
+    opacity: .8;
+    transition: .3s;
+    z-index: 3;
+}
+.mail:hover {
+    opacity: 1;
+}
+.aman-menu{
+    position: absolute;
+    width: 21px;
+    height: 16px;
+    top: 1.4rem;
+    left: 1.9rem;
+    z-index: 3;
+    cursor: pointer;
+    transition: .3s;
+    opacity: 0.8;
+}
+.aman-menu:hover{
+    opacity: 1;
+}
+.aman-menu .center{
+    position: absolute;
+    height: 2px;width: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border-radius: 1px;
+}
+.aman-menu:before , .aman-menu:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #fff;
+}
+.aman-menu:before {
+    top: 0;
+}
+.aman-menu:after{
+    bottom: 0;
+}
+.main{
+    position: absolute;
+    width: 100%;height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main .image{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: url(./Myimg.JPG) no-repeat center / cover;
+    border: 4px solid #00d8fe;
+    margin-bottom: 2px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.image .img_hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0;
+    transition: .6s;
+}
+.image .img_hover:hover{
+    opacity: 1;
+}
+.name{
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1;
+    margin: 5px 0;
+}
+.sub-name{
+    font-size: 1.1rem;
+    opacity: 0.8;
+    color: #fff;
+}
+.content{
+    display: flex;
+    padding: 1.7rem 2.5rem 2.6rem 2.5rem;
+}
+.right{
+    padding-top: 1.5rem;;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-left: 2.1rem;
+}
+
+.number{
+    font-size: 1.9rem;
+    font-weight: 200;
+    color: #fff;
+    line-height: 1;
+    font-family: 'Nanum Myeongjo', serif;
+}
+.number-title{
+    font-size: .55rem;
+    color: #666;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 1;
+    text-transform: uppercase;
+}
+.title{
+    position: relative;
+    color: #555;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0 0 3px 0;
+    margin-bottom: .9rem;
+    display: inline-block;
+}
+.title:after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #555;
+    bottom: 0;
+    left: 0;
+}
+.text{
+    color: #666;
+    font-weight: 300;
+    line-height: 1.7rem;
+}
+.icon-container{
+    padding: 1rem 0;
+}
+
+.icon{
+    color: aqua;
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin-right: 8px;
+    transition: .3s;
+    z-index: 2;
+}
+.icon:hover{
+    color: blue;
+}
+.buttons{
+    display: flex;
+    margin-top: 5px;
+}
+.buttons a{
+    text-decoration: none;
+}
+.follow , .share{
+    flex : 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.follow:hover , .share:hover{
+    flex : 4;
+}
+.follow{
+    padding: 9.6px 0;
+    width: 100%;
+    background: linear-gradient(to right,#4facfe 0%, #00f2fe 140%);
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 18.1px;
+    margin-right: 3px;
+}
+.follow a{
+    background: linear-gradient(to right,#4facfe 0%, #00f2fe 140%);
+}
+.share{
+   padding: 7.6px 0;
+   width: 100%;
+   border: 2px solid #4facfe;
+    color: #4facfe;
+    text-decoration: none;
+    text-align: center;
+    font: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 3px;
+    border-radius: 18.1px;
+}

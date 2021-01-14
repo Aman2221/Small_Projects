@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Linux Presentation</title>
+</head>
+<body>
+    <h1 id='head1'>HOW TO CREATE PARTATION IN LINUX ?</h1>
+    <p id="para1">A ) There are two ways of creating partition is linux </p>
+    <ol id="ul_1" type='1'>
+        <li>1. Using graphical user interface.</li>
+        <li>2. Using command line interface.</li>
+    </ol>
+    <p id="para1">B ) Types of partition</p>
+    <ol id="ul_1" type='1'>
+        <li>1. Primary/Physical partition.</li>
+        <li>2. Extended partition.</li>
+        <li>3. Logical partition.</li>
+        </ol>
+        <p id="para1">C ) Explanation </p>
+    <ol id="ul_1"  class='explain' type='1' style="text-align: left; margin-left: 35px;">
+        <li> Primary : Can only create <span>four partitions.</span> </li>
+        <li> Extended : <span>Can not create </span>file System.</li>
+        <li>Logical : Crated using <span>Extended partition. </span><span id='imp'><br/>Maximum <span>11</span> logical partition</span> </li>
+        </ol>
+        <p id="para1">D ) Partition Commands</p>
+        <ol id="ul_1"  class='explain' type='1' style="text-align: left; margin-left: 35px;">
+            <li> m : Help</li>
+            <li> p : Primary</li>
+            <li> e : Extended</li>
+            <li> n : New</li>
+            <li> d : Delete</li>
+            <li> w : Save</li>
+        </ol>
+        <p id="para1">E ) Creating Partition
+    </p>
+    <ol id="ul_1"  class='explain' type='1' style="text-align: left; margin-left: 35px;">
+        <li> Get root access</li>
+        <li> fdisk - l (exsisting files) </li>
+        <li> fdisk /dev/sda </li>
+        <li>n (new partition)</li>
+        <li>Choose type </li>
+        <li>P (primary) or E (extended)</li>
+        <li>Specify Space</li>
+        <li>w (save Partitions)</li>
+        </ol>
+</body>
+</html>

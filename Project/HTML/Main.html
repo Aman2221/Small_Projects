@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./IMG/favicon.ico">
+        <link rel="stylesheet" href="E:\Product Card\style.css">
+        <link rel="stylesheet" href="G:\Project\Css\style.css">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+html 
+{
+    height: 100%;
+    font-family: 'Montserrat';
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    --bg: #FCFCFC;
+    --bg-panel: #EBEBEB;
+    --color-headings: #0077FF;
+    --color-text: #333333;
+    }
+
+html[data-theme='dark'] {
+    --bg: #333333;
+    --bg-panel: #434343;
+    --color-headings: #3694FF;
+    --color-text: #B5B5B5;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+.container {
+    height: -40px;
+    background-color: var(--bg-panel);
+    margin: -8em;
+    padding: 1em;
+    border-radius: 15px;
+
+    display: grid;
+    grid-template-columns: 80% auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "title switch"
+        "content content";
+}
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 52px;
+	height: 27px;
+	background: grey;
+	float: right;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: var(--color-headings);
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 45px;
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
+</style>
+    <title>Honda Services</title>
+    </head>
+    <body>
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Honda Services</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active"></i>Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#feedbacks" class="nav__link">feedbacks</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <div class="toggle-container" style="margin-right : -110px">
+                        <input style="margin : auto 30px" type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>  
+                    </div>
+                    </ul>
+                </div>        
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Welcome<br>in<span class="home__title-color"> Honda Services</span>
+                    <p style="font-size : 30px; color : rgb(68, 155, 68)">Schedule Service Online.</p></h1>
+                    <a href="./Contact.html" class="button">BOOK NOW</a>
+                </div>
+                <!--
+                <div class="home__social">
+                    <p style="font-size : 25px; color : rgb(68, 155, 68)">Buy Your New Honda Without Stepping Out</p><br>
+                    <a href="https://www.honda2wheelersindia.com/BookNow" class="button">BOOK NOW</a>
+                        
+                </div>
+                -->
+
+                <div class="home__img">    
+                    <img src="E:\Project\IMG\A6.png"alt="">
+                    <img class="transition-img" styel="float: left; top: -500px;" src ="E:\Project\IMG\A4.png"  alt="">
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="E:\Project\IMG\main_1.png" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Honda Services</h2>
+                        <p class="about__text">
+                            May 23, 2012. Soichiro Honda (1906 – 1991), the founder and president
+                            of the Honda Motor Company.Honda Motor Company, Ltd is a Japanese public
+                            multinational conglomerate corporation primarily known as a manufacturer of 
+                            automobiles, motorcycles, and power equipment.
+                            Honda has been the world's largest motorcycle manufacturer since 1959, 
+                            reaching a production of 400 million by the end of 2019,
+                            as well as the world's largest manufacturer of internal combustion engines
+                            measured by volume, producing more than 14 million internal combustion 
+                            engines each year.   
+                        </p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <section class="feedbacks section" id="feedbacks">
+                <h2 class="section-title">FeedBack</h2>
+
+                <div class="feedbacks__container bd-grid">          
+                    <div>
+                        <h2 class="feedbacks__subtitle">Profesional feedbacks</h2>
+                        <p class="feedbacks__text">
+                            FEEDBACK FROM OTHER PROFESSIONALS. There is no single 
+                            way in which NQSWs should seek feedback from service users 
+                            and carers. This are the average of all the feedbacks taken form
+                            customers, employees and some proffessionals.                        </p>
+                        <div class="feedbacks__data">
+                            <div class="feedbacks__names">
+                                
+                                <span class="feedbacks__name ">Time</span>
+                            </div>
+                            <div class="feedbacks__bar feedbacks__Time">
+
+                            </div>
+                            <div>
+                                <span class="feedbacks__percentage">80%</span>
+                            </div>
+                        </div>
+                        <div class="feedbacks__data">
+                            <div class="feedbacks__names">
+                                
+                                <span class="feedbacks__name">Efficiency</span>
+                            </div>
+                            <div class="feedbacks__bar feedbacks__css">
+                                
+                            </div>
+                            <div>
+                                <span class="feedbacks__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="feedbacks__data">
+                            <div class="feedbacks__names">
+
+                                <span class="feedbacks__name">Maintainence</span>
+                            </div>
+                            <div class="feedbacks__bar feedbacks__js">
+                                
+                            </div>
+                            <div>
+                                <span class="feedbacks__percentage">50%</span>
+                            </div>
+                        </div>
+                        <div class="feedbacks__data">
+                            <div class="feedbacks__names">
+
+                                <span class="feedbacks__name">Negative</span>
+                            </div>
+                            <div class="feedbacks__bar feedbacks__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="feedbacks__percentage">30%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img style="height: 170px; width:350px; margin-left: 120px;"src="E:\Project\IMG\main.png" alt="" class="feedbacks__img">
+                    </div>
+                </div>
+            </section>
+            <!--Work-->
+            <section class="work section" id="work" style="height: 400px;">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container bd-grid" style="float: left;">
+                    <div class="work__img">
+                    <img style = "height:150px; width : 300px; padding: auto;" src="E:\Project\IMG\Adevertisment.png" alt="">
+                    <a href="" class="button_1">BOOK NOW</a>
+                </div>
+                    <div class="work__img">
+                    <img style = "height:150px;" src="E:\Project\IMG\engine.png" alt="">
+                    <a href="" class="button_1">ENGINE OIL</a>
+                    </div>
+                    <div class="work__img">
+                    <img style="height:150px; width : 300px" src="E:\Project\IMG\effect.png"  alt="">
+                    <a href="" class="button_1">SPPED CHECK</a>
+                </div> 
+            </section>
+            <h2 class="section-title">PRODUCT CARDS</h2>
+            <div class="container" >
+                <div class="card" style="float: right;">
+                    <img class="card_img" src="E:\Product Card\A1.png" alt="">
+                    <div class="card_data">
+                        <h1 class="card_title">Honda Activa 6G</h1>
+                        <span class="card_price">Rs.60K</span>
+                        <p class="card_description">
+                            Honda Activa 6G Yellow Varient
+                         <a href="#" class="card_button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="float: right;" >
+                <div class="card">
+                    <img class="card_img" src="E:\Product Card\A1.png" alt="">
+                    <div class="card_data">
+                        <h1 class="card_title">Honda Activa 6G</h1>
+                        <span class="card_price">Rs.60K</span>
+                        <p class="card_description">
+                            Honda Activa 6G Yellow Varient
+                         <a href="#" class="card_button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <img class="card_img" src="E:\Product Card\A1.png" alt="">
+                    <div class="card_data">
+                        <h1 class="card_title">Honda Activa 6G</h1>
+                        <span class="card_price">Rs.60K</span>
+                        <p class="card_description">
+                            Honda Activa 6G Yellow Varient
+                         <a href="#" class="card_button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Submit" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Thank You</p>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/profile.php?id=100012875318770" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/aman_singhhhhhh/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://twitter.com/Aman23398618" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p>&#169; 2020 copyright all right reserved</p>
+        </footer>
+        <script type="text/javascript">
+        var checkbox = document.querySelector('input[name=theme]');
+        
+        checkbox.addEventListener('change', function() {
+            if(this.checked) {
+                trans()
+                document.documentElement.setAttribute('data-theme', 'dark')
+            } else {
+                trans()
+                document.documentElement.setAttribute('data-theme', 'light')
+            }
+        })
+        
+        let trans = () => {
+            document.documentElement.classList.add('transition');
+            window.setTimeout(() => {
+                document.documentElement.classList.remove('transition')
+            }, 1000)
+        }
+            </script>
+    </body>
+</html>
